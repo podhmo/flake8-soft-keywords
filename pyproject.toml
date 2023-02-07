@@ -17,7 +17,7 @@ black = "^23.1.0"
 [tool.poetry.plugins]
 
 [tool.poetry.plugins."flake8.extension"]
-"SK0" = "flake8_soft_keywords:Plugin"
+"SK0" = "flake8_soft_keywords:Checker"
 
 [build-system]
 requires = ["poetry-core"]

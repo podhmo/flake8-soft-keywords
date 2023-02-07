@@ -25,7 +25,7 @@ def _soft_reserved_keywords() -> frozenset[str]:
     return _KEYWORDS
 
 
-class Plugin:
+class Checker:
     """preventing the assignment with the name in soft keywords"""
 
     # off_by_default = True
