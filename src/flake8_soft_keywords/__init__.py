@@ -18,7 +18,7 @@ class SK0(Error):
     """soft keyword is used"""
 
 
-def _soft_reserved_keywords() -> frozenset[str]:
+def _soft_keywords() -> frozenset[str]:
     global _KEYWORDS
     if _KEYWORDS is None:
         _KEYWORDS = frozenset(vars(sys.modules[sum.__module__]).keys())
@@ -32,7 +32,7 @@ class Checker:
 
     def __init__(self, tree: ast.Module):
         self.tree = tree
-        self.reserved_words = _soft_reserved_keywords()
+        self.reserved_words = _soft_keywords()
 
     def run(self) -> t.Generator[Error, None, None]:
         for node in ast.walk(self.tree):
