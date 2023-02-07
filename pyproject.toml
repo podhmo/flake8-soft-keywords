@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "flake8-soft-keywords"
+version = "0.1.0"
+description = ""
+authors = ["podhmo <ababjam61+github@gmail.com>"]
+readme = "README.md"
+packages = [{include = "flake8_soft_keywords", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
