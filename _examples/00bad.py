@@ -1,7 +1,5 @@
-def main():
+def main(x,y):
     dict = 42
     print(dict())
-
-
-if __name__ == "__main__":
-    main()
+    sum, x = [1, 2]
+    print(sum, x)
